@@ -1,0 +1,132 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: #2c3e50;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #27ae60;
+}
+
+.oculto {
+    display: none !important;
+}
+
+.titulo-jogo {
+    font-size: 4rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.titulo-pausa {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.btn-menu {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-menu:hover {
+    background-color: #f39c12;
+}
+
+.btn-fechar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-fechar:hover {
+    background-color: #c0392b;
+}
+
+.btn-pausar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #34495e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#area-jogo {
+    width: 100%;
+    height: 100%;
+    background-color: #8e44ad; /* Espaço reservado para o mapa do jogo */
+}
+
+/* Atualização no style.css */
+
+#hud-topo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.diurno {
+    color: #f1c40f; 
+}
+
+.noturno {
+    color: #3498db; 
+}
+
+#display-tempo {
+    color: #ecf0f1;
+}
+
+#display-onda {
+    color: #2ecc71;
+}

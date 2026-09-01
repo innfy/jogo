@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defensivo no Agrícola</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu-principal" class="tela ativa">
+        <button id="btn-fechar-jogo" class="btn-fechar">X</button>
+        <h1 class="titulo-jogo">defensivo no agrícola</h1>
+        
+        <div id="container-play">
+            <button id="btn-play" class="btn-menu">Play</button>
+        </div>
+
+        <div id="container-plataforma" class="oculto">
+            <button id="btn-pc" class="btn-menu">jogar com computador</button>
+            <button id="btn-mobile" class="btn-menu">jogar com tablet/mobile</button>
+        </div>
+    </div>
+
+    <div id="tela-gameplay" class="tela oculto">
+        <button id="btn-pausar" class="btn-pausar">Pausar (||)</button>
+        <div id="area-jogo"></div>
+    </div>
+
+    <div id="menu-pausa" class="tela oculto">
+        <h2 class="titulo-pausa">Pausado</h2>
+        <button id="btn-retornar-menu" class="btn-menu">Voltar para o Menu Principal</button>
+        <button id="btn-continuar" class="btn-menu">Continuar Jogo</button>
+    </div>
+
+    <script src="main.js"></script>
+<script src="menu.js"></script>
+</body>
+</html>
